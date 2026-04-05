@@ -37,3 +37,7 @@ def is_valid_email(email):
     """Basic email format check."""
     pattern = r"^[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}$"
     return bool(re.match(pattern, email))
+
+# Add logging utility
+def log_event(event: str) -> None:
+    print(f'Event: {event}')
